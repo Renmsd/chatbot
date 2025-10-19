@@ -2,9 +2,9 @@
 from openai import OpenAI
 import streamlit as st
 import os
-api_key = st.secrets("OPENAI_API_KEY")
+api_key = st.secrets["OPENAI_API_KEY"]
 from langchain_openai import ChatOpenAI
-from langchain.schema import HumanMessage, AIMessage, SystemMessage
+from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
 st.markdown("# ChatGPT-like clone")
 
